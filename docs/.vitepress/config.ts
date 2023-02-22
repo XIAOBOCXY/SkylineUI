@@ -29,7 +29,6 @@ const sidebar = {
                 { text: 'Progress 进度条', link: '/components/feedback/' },
             ]
         },
-        { text: '数据录⼊' },
         { text: '数据展示' ,
             children: [
                 { text: 'Avatar 头像', link: '/components/avatar/' },
