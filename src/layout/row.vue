@@ -53,9 +53,4 @@ export default defineComponent({
 </script>
 <style>
 @import './style/row.css';
-
-.row {
-  /* height: 20px; */
-  background-color: yellowgreen;
-}
 </style>

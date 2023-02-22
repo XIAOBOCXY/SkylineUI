@@ -9,14 +9,11 @@ import SkyButtongroup from "./buttongroup";
 import breadcrumb from "./breadcrumbs/breadcrumb";
 import breadcrumbItem from "./breadcrumbs/breadcrumbItem";
 import affix from "./affix";
-import col from "./layout/col/col.vue";
-import row from "./layout/row/row.vue";
 import SkyInput from './input/input.vue';
 import SkyInputNumber from './inputnumber/inputnumber.vue';
 import skyFeedback from "./feedback";
-import layout from './layout2/layout.vue'
-import SkyCol from './layout2/col.vue'
-import SkyRow from './layout2/row.vue'
+import SkyCol from './layout/col.vue'
+import SkyRow from './layout/row.vue'
 
 //编写一个插件，实现一个install方法
 export default {
@@ -29,10 +26,7 @@ export default {
     app.component(breadcrumb.__name, breadcrumb);
     app.component(breadcrumbItem.__name, breadcrumbItem);
     app.component(affix.__name, affix);
-    app.component(col.name, col);
-    app.component(row.name, row);
     app.component(skyFeedback.name, skyFeedback);
-    app.component(layout.name, layout);
     app.component(SkyCol.name, SkyCol);
     app.component(SkyRow.name, SkyRow);
   },

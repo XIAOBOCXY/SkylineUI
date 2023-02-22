@@ -11,8 +11,6 @@ import { createApp } from "vue";
 // // import JSXButton from "./JSXButton";
 // // createApp(JSXButton).mount("#app");
 
-// // import Layout from "./layout";
-// // createApp(Layout).mount("#app")
 
 import App from './App.vue'
 const app = createApp(App)

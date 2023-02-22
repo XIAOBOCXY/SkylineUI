@@ -28,12 +28,7 @@ export default defineComponent({
     push: {
       type: Number,
       default: 0
-    },
-    xs: Number,
-    sm: Number,
-    md: Number,
-    lg: Number,
-    xl: Number
+    }
   },
   data() {
     return {
@@ -42,12 +37,7 @@ export default defineComponent({
       offsetClass: '',
       pullClass: '',
       pushClass: '',
-      sizeClass: '',
-      xsClass: '',
-      smClass: '',
-      mdClass: '',
-      lgClass: '',
-      xlClass: ''
+      sizeClass: ''
     }
   },
   created() {
@@ -62,13 +52,7 @@ export default defineComponent({
       if (this.span) this.spanClass = 'col-' + this.span
       this.offsetClass = 'col-offset-' + this.offset
       this.pullClass = 'col-pull-' + this.pull
-      this.pushClass = 'col-push-' + this.push
-
-      // this.xsClass = "col-xs-" + this.xs;
-      // this.smClass = "col-sm-" + this.sm;
-      // this.mdClass = "col-md-" + this.md;
-      // this.lgClass = "col-lg-" + this.lg;
-      // this.xlClass = "col-xl-" + this.xl;
+      this.pushClass = 'col-push-' + this.pushClass
     }
   }
 })
@@ -79,8 +63,8 @@ export default defineComponent({
 .col {
   float: left;
   box-sizing: border-box;
-  background-color: pink;
+  // background-color: pink;
   background-clip: content-box;
-  border-radius: 5px;
+  border: 0;
 }
 </style>

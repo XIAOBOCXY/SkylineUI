@@ -309,7 +309,7 @@ const changeEvent = (e: any) => {
     color: #909399;
     min-height: 100%;
     border-radius: 4px;
-    padding: 0 5px;
+    padding: 0 3px;
     white-space: nowrap;
     position: relative;
     display: inline-flex;
@@ -330,16 +330,15 @@ const changeEvent = (e: any) => {
     box-shadow: 0 1px 0 0 #dcdfe6 inset, 0 -1px 0 0 #dcdfe6 inset,
       -1px 0 0 0 #dcdfe6 inset;
   }
-  .sky-input-group__append.sky-input--large,
-  .sky-input-group__prepend.sky-input--large{
-    font-size: 14px;
-    width: 40px;
-  }
-  .sky-input-group__append.sky-input--small,
-  .sky-input-group__prepend.sky-input--small{
-    font-size: 12px;
-    width: 24px;
-  }
+  // .sky-input-group__append.sky-input--large,
+  // .sky-input-group__prepend.sky-input--large{
+  //   font-size: 14px;
+  // }
+  // .sky-input-group__append.sky-input--small,
+  // .sky-input-group__prepend.sky-input--small{
+  //   font-size: 12px;
+  //   height: 24px;
+  // }
 }
 .sky-input-wrap {
   font-size: 14px;

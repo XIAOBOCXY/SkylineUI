@@ -1,7 +1,8 @@
 <template>
     <div class="sky-input-number-wrap">
         <sky-input id="el" type="number" class="sky-input-number"
-        center v-model="inputValue" :class="[disabledClass]"
+        center v-model="inputValue" 
+        :class="[disabledClass]"
         :disabled="props.disabled"
         :size="props.size" 
         :name="props.name"
@@ -141,11 +142,12 @@
             props.onFocus()
         }
     }
+
 </script>
 
 <style scoped lang="scss">
     .sky-input-number-wrap{
-        width: 300px;
+        // width: 300px;
         // .sky-input-number__increase.is-disabled, .sky-input-number__decrease.is-disabled {
         //     color: #a8abb2;
         //     cursor: not-allowed;

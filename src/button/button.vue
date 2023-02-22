@@ -10,8 +10,9 @@
         'is-circle': circle,
         'is-disabled': disabled || loading,
         'is-loading': loading
-      }
+      },
     ]"
+     :disabled="disabled"
   >
     <i class="sky-icon-refresh" v-if="loading"></i>
     <i :class="icon" v-if="icon && !loading"></i>
@@ -79,9 +80,11 @@ export default {
   border-radius: 4px;
   &:hover,
   &:focus {
-    color: #409eff;
-    border-color: #c6e2ff;
-    background-color: #ecf5ff;
+    &:not(.is-disabled) {
+      color: #409eff;
+      border-color: #c6e2ff;
+      background-color: #ecf5ff;
+    }
   }
 }
 .button-primary {
@@ -90,9 +93,11 @@ export default {
   border-color: #409eff;
   &:hover,
   &:focus {
-    background: #66b1ff;
-    background-color: #66b1ff;
-    color: #fff;
+    &:not(.is-disabled) {
+      background: #66b1ff;
+      background-color: #66b1ff;
+      color: #fff;
+    }
   }
 }
 .button-success {
@@ -101,9 +106,11 @@ export default {
   border-color: #67c23a;
   &:hover,
   &:focus {
-    background: #85ce61;
-    background-color: #85ce61;
-    color: #fff;
+    &:not(.is-disabled) {
+      background: #85ce61;
+      background-color: #85ce61;
+      color: #fff;
+    }
   }
 }
 .button-info {
@@ -112,9 +119,11 @@ export default {
   border-color: #909399;
   &:hover,
   &:focus {
-    background: #a6a9ad;
-    background-color: #a6a9ad;
-    color: #fff;
+    &:not(.is-disabled) {
+      background: #a6a9ad;
+      background-color: #a6a9ad;
+      color: #fff;
+    }
   }
 }
 .button-warning {
@@ -123,9 +132,11 @@ export default {
   border-color: #e6a23c;
   &:hover,
   &:focus {
-    background: #ebb563;
-    background-color: #ebb563;
-    color: #fff;
+    &:not(.is-disabled) {
+      background: #ebb563;
+      background-color: #ebb563;
+      color: #fff;
+    }
   }
 }
 .button-danger {
@@ -134,18 +145,22 @@ export default {
   border-color: #f56c6c;
   &:hover,
   &:focus {
-    background: #f78989;
-    background-color: #f78989;
-    color: #fff;
+    &:not(.is-disabled) {
+      background: #f78989;
+      background-color: #f78989;
+      color: #fff;
+    }
   }
 }
 //plain
 .button.is-plain {
   &:hover,
   &:focus {
-    background: #fff;
-    border-color: #489eff;
-    color: #409eff;
+    &:not(.is-disabled) {
+      background: #fff;
+      border-color: #489eff;
+      color: #409eff;
+    }
   }
 }
 .button-primary.is-plain {
@@ -153,13 +168,10 @@ export default {
   background: #ecf5ff;
   &:hover,
   &:focus {
-    // background: #409eff;
-    // border-color: #409eff;
-    // color: #fff;
     &:not(.is-disabled) {
       background: #409eff;
       border-color: #409eff;
-      color: purple;
+      color: #fff;
     }
   }
 }
@@ -168,9 +180,11 @@ export default {
   background: #c2e7b0;
   &:hover,
   &:focus {
-    background: #67c23a;
-    border-color: #67c23a;
-    color: #fff;
+    &:not(.is-disabled) {
+      background: #67c23a;
+      border-color: #67c23a;
+      color: #fff;
+    }
   }
 }
 .button-info.is-plain {
@@ -178,9 +192,11 @@ export default {
   background: #d3d4d6;
   &:hover,
   &:focus {
-    background: #909399;
-    border-color: #909399;
-    color: #fff;
+    &:not(.is-disabled) {
+      background: #909399;
+      border-color: #909399;
+      color: #fff;
+    }
   }
 }
 .button-warning.is-plain {
@@ -188,9 +204,11 @@ export default {
   background: #f5dab1;
   &:hover,
   &:focus {
-    background: #e6a23c;
-    border-color: #e6a23c;
-    color: #fff;
+    &:not(.is-disabled) {
+      background: #e6a23c;
+      border-color: #e6a23c;
+      color: #fff;
+    }
   }
 }
 .button-danger.is-plain {
@@ -198,9 +216,11 @@ export default {
   background: #fbc4c4;
   &:hover,
   &:focus {
-    background: #f56c6c;
-    border-color: #f56c6c;
-    color: #fff;
+    &:not(.is-disabled) {
+      background: #f56c6c;
+      border-color: #f56c6c;
+      color: #fff;
+    }
   }
 }
 // round
@@ -227,7 +247,9 @@ export default {
   background-color: transparent;
   &:hover,
   &:focus {
-    background-color: transparent;
+    &:not(.is-disabled) {
+      background-color: transparent;
+    }
   }
 }
 .size-medium {
