@@ -13,18 +13,20 @@
         >
             <!-- 减号 -->
             <template v-slot:prepend>
-                <sky-button class="sky-input-number__decrease"
+                <sky-button class="sky-input-number__decrease input-number-btn"
                 :class="{'is-disabled':decreaseClass}" 
-                @click="handleClick('decrease')" 
-                style="margin: 0;padding: 7px 20px;background-color: transparent;border: none;">
+                @click="handleClick('decrease')"
+                :disabled="props.disabled"
+                >
                         <sky-icon class="sky-icon-minus1"></sky-icon>
                 </sky-button>
             </template>
             <!-- 加号 -->    
             <template v-slot:append>
-                <sky-button class="sky-input-number__increase " 
+                <sky-button class="sky-input-number__increase input-number-btn"
                 @click="handleClick('increase')"
-                :class="{'is-disabled':increaseClass}">
+                :class="{'is-disabled':increaseClass}"
+                :disabled="props.disabled">
                         <sky-icon class="sky-icon-add1"></sky-icon>
                 </sky-button>
             </template>
@@ -140,12 +142,15 @@
 <style scoped lang="scss">
     .sky-input-number-wrap{
         width: 300px;
-        .sky-input-number__increase.is-disabled, .sky-input-number__decrease.is-disabled {
-            color: #a8abb2;
-            cursor: not-allowed;
-        }
-        .skyButton{
-            margin: 0;padding: 7px 20px;background-color: transparent;border: none;
+        // .sky-input-number__increase.is-disabled, .sky-input-number__decrease.is-disabled {
+        //     color: #a8abb2;
+        //     cursor: not-allowed;
+        // }
+        .input-number-btn{
+            margin: 0;
+            padding: 7px 20px;
+            background-color: transparent;
+            border: none;
         }
     }
     

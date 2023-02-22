@@ -301,7 +301,7 @@ const changeEvent = (e: any) => {
     color: #909399;
     min-height: 100%;
     border-radius: 4px;
-    padding: 0 20px;
+    padding: 0 5px;
     white-space: nowrap;
     position: relative;
     display: inline-flex;
@@ -340,7 +340,7 @@ const changeEvent = (e: any) => {
     background-color: #f5f7fa;
     box-shadow: 0 0 0 1px #e4e7ed inset;
   }
-  padding-right: 8px;
+  // padding-right: 8px;
   .clear-icon {
     position: absolute;
     top: 6px;
