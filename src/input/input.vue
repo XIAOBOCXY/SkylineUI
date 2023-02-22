@@ -330,13 +330,15 @@ const changeEvent = (e: any) => {
     box-shadow: 0 1px 0 0 #dcdfe6 inset, 0 -1px 0 0 #dcdfe6 inset,
       -1px 0 0 0 #dcdfe6 inset;
   }
-  .sky-input-group__append.sky-input--large{
+  .sky-input-group__append.sky-input--large,
+  .sky-input-group__prepend.sky-input--large{
     font-size: 14px;
-    padding: 1px 15px;
+    width: 40px;
   }
+  .sky-input-group__append.sky-input--small,
   .sky-input-group__prepend.sky-input--small{
     font-size: 12px;
-    padding: 1px 7px;
+    width: 24px;
   }
 }
 .sky-input-wrap {

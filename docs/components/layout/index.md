@@ -9,39 +9,48 @@
 
 ```vue
 <template>
-    <sky-row>
-      <sky-col :span="24"></sky-col>
-    </sky-row>
-    <sky-row>
-      <sky-col :span="12"></sky-col>
-      <sky-col :span="12"></sky-col>
-    </sky-row>
-    <sky-row>
-      <sky-col :span="8"></sky-col>
-      <sky-col :span="8"></sky-col>
-      <sky-col :span="8"></sky-col>
-    </sky-row>
-    <sky-row>
-      <sky-col :span="6"></sky-col>
-      <sky-col :span="6"></sky-col>
-      <sky-col :span="6"></sky-col>
-      <sky-col :span="6"></sky-col>
-    </sky-row>
+  <el-row>
+    <el-col :span="24"><div class="grid-content bg-purple-dark"></div></el-col>
+  </el-row>
+  <el-row>
+    <el-col :span="12"><div class="grid-content bg-purple"></div></el-col>
+    <el-col :span="12"><div class="grid-content bg-purple-light"></div></el-col>
+  </el-row>
+  <el-row>
+    <el-col :span="8"><div class="grid-content bg-purple"></div></el-col>
+    <el-col :span="8"><div class="grid-content bg-purple-light"></div></el-col>
+    <el-col :span="8"><div class="grid-content bg-purple"></div></el-col>
+  </el-row>
+  <el-row>
+    <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+    <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+  </el-row>
+  <el-row>
+    <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
+    <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
+    <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
+    <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
+    <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
+    <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
+  </el-row>
 </template>
-
 ```
+
 :::
 
 ## 分栏间隔
 
 :::demo Row 组件 提供 gutter 属性来指定每一栏之间的间隔，默认间隔为 0。
+
 ```vue
 <template>
-    <sky-row :gutter="20">
-      <sky-col :span="8"></sky-col>
-      <sky-col :span="8"></sky-col>
-      <sky-col :span="8"></sky-col>
-    </sky-row>
+  <sky-row :gutter="20">
+    <sky-col :span="8"></sky-col>
+    <sky-col :span="8"></sky-col>
+    <sky-col :span="8"></sky-col>
+  </sky-row>
 </template>
 ```
 
