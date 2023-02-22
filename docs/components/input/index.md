@@ -221,3 +221,11 @@
 | input  | 在 Input 值改变时触发                                       | `Function` |
 | clear  | 在点击由 `clearable` 属性生成的清空按钮时触发               | `Function` |
 
+### 对外暴露的方法
+
+| 名称  | 说明              | 类型       |
+| :---- | :---------------- | :--------- |
+| blur  | 使 input 失去焦点 | `Function` |
+| focus | 使 input 获取焦点 | `Function` |
+
+

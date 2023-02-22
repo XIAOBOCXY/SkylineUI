@@ -41,7 +41,7 @@
         </div>
         <!-- input -->
         <div class="sky-input-wrap" :class="[isFocus, isDisabled, sizeClass]">
-          <input
+          <input ref="inputElement"
             class="sky-input-inner"
             @focus="focusEvent"
             @blur="blurEvent"
@@ -188,6 +188,7 @@ const props = defineProps({
   onFocus: Function,
   onChange: Function
 })
+
 let inputType = computed(() => {
   return props.type
 })
@@ -276,6 +277,17 @@ const changeEvent = (e: any) => {
     props.onChange()
   }
 }
+const inputElement = ref()
+const focus = ()=>{
+    inputElement.value.focus()
+}
+const blur = ()=>{
+  inputElement.value.blur()
+}
+defineExpose({
+    focus,
+    blur, 
+})
 </script>
 
 <style lang="scss" scoped>

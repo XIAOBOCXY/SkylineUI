@@ -23,10 +23,23 @@ const sidebar = {
               { text: 'Input Number 数字输入框', link: '/components/inputnumber/' },
           ]
         },
-        { text: '反馈' },
+        { 
+            text: '反馈' ,
+            children: [
+                { text: 'Progress 进度条', link: '/components/feedback/' },
+            ]
+        },
         { text: '数据录⼊' },
-        { text: '数据展示' },
-        { text: '布局', link: '/components/layout/' },
+        { text: '数据展示' ,
+            children: [
+                { text: 'Avatar 头像', link: '/components/avatar/' },
+            ]
+        },
+        { text: '布局', 
+            children: [
+                { text: 'layout 布局', link: '/components/layout/' },
+            ],
+        }
     ]
 }
 const config = {

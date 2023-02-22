@@ -1,7 +1,7 @@
 <template>
-    //进度条容器  skyProgress
+    <!-- 进度条容器  skyProgress -->
     <div class="skyProgress">
-        //进度
+        <!-- 进度 -->
       <span class="skyProgress-fill" ref="fill" :style="[{'background-color':color}]"></span>
     </div>
   </template>   
@@ -30,7 +30,7 @@
   };
   </script>
 
-//样式
+<!-- 样式 -->
 <style>
     .progress-bar {
         width: 280px;

@@ -14,6 +14,7 @@ import SkyInputNumber from './inputnumber/inputnumber.vue';
 import skyFeedback from "./feedback";
 import SkyCol from './layout/col.vue'
 import SkyRow from './layout/row.vue'
+import SkyAvatar from './avatar/avatar.vue'
 
 //编写一个插件，实现一个install方法
 export default {
@@ -29,5 +30,6 @@ export default {
     app.component(skyFeedback.name, skyFeedback);
     app.component(SkyCol.name, SkyCol);
     app.component(SkyRow.name, SkyRow);
+    app.component(SkyAvatar.name,SkyAvatar);
   },
 };
