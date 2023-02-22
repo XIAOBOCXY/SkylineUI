@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
-    "coverage":"vitest run --coverage",
+    "coverage": "vitest run --coverage",
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "docs:dev": "vitepress dev docs --host 0.0.0.0",
@@ -24,7 +24,7 @@
     "@vitejs/plugin-vue": "3.0.3",
     "@vitejs/plugin-vue-jsx": "2.0.0",
     "@vue/eslint-config-prettier": "^7.0.0",
-    "@vue/test-utils": "^2.0.2",
+    "@vue/test-utils": "^2.3.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.34.0",
     "eslint-formatter-pretty": "^4.1.0",
