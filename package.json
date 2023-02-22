@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
+    "coverage":"vitest run --coverage",
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "docs:dev": "vitepress dev docs --host 0.0.0.0",
