@@ -36,7 +36,7 @@
     <template v-else="type === 'text'">
       <div class="sky-input-group" :class="[prependClass, appendClass]">
         <!-- 前缀 -->
-        <div class="sky-input-group__prepend" v-if="$slots.prepend">
+        <div class="sky-input-group__prepend" v-if="$slots.prepend" :class="[sizeClass]">
           <slot name="prepend"></slot>
         </div>
         <!-- input -->
@@ -75,7 +75,7 @@
           </span>
         </div>
         <!-- 后缀 -->
-        <div class="sky-input-group__append" v-if="$slots.append">
+        <div class="sky-input-group__append" v-if="$slots.append" :class="[sizeClass]">
           <slot name="append"></slot>
         </div>
       </div>
@@ -287,6 +287,14 @@ const changeEvent = (e: any) => {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
+    &.sky-input--large{
+      width: 40px;
+      font-size: 14px;
+    }
+    &.sky-input--small{
+      width: 24px;
+      font-size: 12px;
+    }
   }
   &.sky-input-group-append {
     .sky-input-wrap {
@@ -321,6 +329,14 @@ const changeEvent = (e: any) => {
     border-bottom-left-radius: 0;
     box-shadow: 0 1px 0 0 #dcdfe6 inset, 0 -1px 0 0 #dcdfe6 inset,
       -1px 0 0 0 #dcdfe6 inset;
+  }
+  .sky-input-group__append.sky-input--large{
+    font-size: 14px;
+    padding: 1px 15px;
+  }
+  .sky-input-group__prepend.sky-input--small{
+    font-size: 12px;
+    padding: 1px 7px;
   }
 }
 .sky-input-wrap {
@@ -377,18 +393,11 @@ const changeEvent = (e: any) => {
     }
     &.sky-input--large {
       height: 38px;
+      font-size: 14px;
     }
     &.count{
       padding-right: 50px;
     }
-  }
-  &.sky-input--small {
-    font-size: 12px;
-    padding: 1px 7px;
-  }
-  &.sky-input--large {
-    font-size: 14px;
-    padding: 1px 15px;
   }
   .sky-input-count {
     display: inline-block;

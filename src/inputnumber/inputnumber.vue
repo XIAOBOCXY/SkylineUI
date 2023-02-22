@@ -12,7 +12,7 @@
         @focus="focusEvent"
         >
             <!-- 减号 -->
-            <template v-slot:prepend>
+            <template v-slot:prepend v-if="props.controls">
                 <sky-button class="sky-input-number__decrease input-number-btn"
                 :class="{'is-disabled':decreaseClass}" 
                 @click="handleClick('decrease')"
@@ -22,7 +22,7 @@
                 </sky-button>
             </template>
             <!-- 加号 -->    
-            <template v-slot:append>
+            <template v-slot:append v-if="props.controls">
                 <sky-button class="sky-input-number__increase input-number-btn"
                 @click="handleClick('increase')"
                 :class="{'is-disabled':increaseClass}"
@@ -82,6 +82,10 @@
         label:{
             type:String,
             default:""
+        },
+        controls:{
+            type:Boolean,
+            default:true
         },
         onBlur:Function,
         onFocus:Function,
