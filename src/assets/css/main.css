@@ -1,0 +1,193 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  /* 按钮变量 */
+  --btn-bg-color-white:#fff;
+  --btn-bg-color-black: #000;
+  --btn-bg-color-primary:#409eff;
+  --btn-bg-color-success: #67c23a;
+  --btn-bg-color-warning: #e6a23c;
+  --btn-bg-color-danger: #f56c6c;
+  --btn-bg-color-error: #f56c6c;
+  --btn-bg-color-info: #909399;
+
+  --btn-text-color: #606266;
+
+  --btn-border-color: #dcdfe6;
+  --btn-border-color-primary: #409eff;
+
+  --btn-border-radius: 4px;
+  --btn-font-size: 14px;
+  --btn-font-weight: 500;
+
+
+  --btn-hover-text-color:#409eff;
+  --btn-hover-border-color:#c6e2ff;
+  --btn-hover-bg-color:#ecf5ff;
+  --btn-active-text-color:#409eff;
+  --btn-active-border-color:#409eff;
+  --btn-active-bg-color:#ecf5ff;
+  --btn-text-color-disabled:#a8abb2;
+  --btn-bg-color-disabled:white;
+  --btn-border-color-disabled:#e4e7ed;
+
+  --btn-text-color-primary: #fff;
+  --btn-hover-text-color-primary: white;
+  --btn-hover-bg-color-primary: #79bbff;
+  --btn-hover-border-color-primary: #79bbff;
+  --btn-active-color-primary: white;
+  --btn-active-bg-color-primary: #337ecc;
+  --btn-active-border-color-primary: #337ecc;
+  --btn-text-color-primary-plain: #409eff;
+  --btn-bg-color-primary-plain: #ecf5ff;
+  --btn-border-color-primary-plain: #a0cfff;
+  --btn-hover-text-color-primary-plain: white;
+  --btn-hover-bg-color-primary-plain: #409eff;
+  --btn-hover-border-color-primary-plain: #409eff;
+  --btn-text-color-primary-disabled: white;
+  --btn-bg-color-primary-disabled: #a0cfff;
+  --btn-border-color-primary-disabled: #a0cfff;
+
+
+  --btn-text-color-success: white;
+  --btn-bg-color-success: #67c23a;
+  --btn-border-color-success: #67c23a;
+  --btn-outline-color-success: #b3e19d;
+  --btn-hover-text-color-success: white;
+  --btn-hover-link-text-color-success: #b3e19d;
+  --btn-hover-bg-color-success: #95d475;
+  --btn-hover-border-color-success: #95d475;
+  --btn-active-color-success: white;
+  --btn-active-bg-color-success: #529b2e;
+  --btn-active-border-color-success: #529b2e;
+  --btn-text-color-success-plain:  #67c23a;
+  --btn-bg-color-success-plain:#f0f9eb;
+  --btn-border-color-success-plain: #b3e19d;
+  --btn-hover-text-color-success-plain: white;
+  --btn-hover-bg-color-success-plain:  #67c23a;
+  --btn-hover-border-color-success-plain: #67c23a;
+  --btn-text-color-success-disabled: white;
+  --btn-bg-color-success-disabled: #b3e19d;
+  --btn-border-color-success-disabled: #b3e19d;
+
+  --btn-text-color-info: #ffffff;
+  --btn-bg-color-info: #909399;
+  --btn-border-color-info: #909399;
+  --btn-outline-color-info: #c8c9cc;
+  --btn-hover-text-color-info: white;
+  --btn-hover-link-text-color-info: #c8c9cc;
+  --btn-hover-bg-color-info: #b1b3b8;
+  --btn-hover-border-color-info: #b1b3b8;
+  --btn-active-color-info: white;
+  --btn-active-bg-color-info: #73767a;
+  --btn-active-border-color-info: #73767a;
+  --btn-text-color-info-plain: #909399;
+  --btn-bg-color-info-plain: #f4f4f5;
+  --btn-border-color-info-plain: #c8c9cc;
+  --btn-hover-text-color-info-plain: white;
+  --btn-hover-bg-color-info-plain: #909399;
+  --btn-hover-border-color-info-plain: #909399;
+  --btn-text-color-info-disabled: white;
+  --btn-bg-color-info-disabled: #c8c9cc;
+  --btn-border-color-info-disabled: #c8c9cc;
+
+  --btn-text-color-warning: #fff;
+  --btn-bg-color-warning: #e6a23c;
+  --btn-border-color-warning: #e6a23c;
+  --btn-outline-color-warning: #f3d19e;
+  --btn-hover-text-color-warning: white;
+  --btn-hover-link-text-color-warning: #f3d19e;
+  --btn-hover-bg-color-warning: #eebe77;
+  --btn-hover-border-color-warning: #eebe77;
+  --btn-active-bg-color-warning: #b88230;
+  --btn-active-color-warning: white;
+  --btn-active-border-color-warning: #b88230;
+  --btn-text-color-warning-plain: #e6a23c;
+  --btn-bg-color-warning-plain: #fdf6ec;
+  --btn-border-color-warning-plain: #f3d19e;
+  --btn-hover-text-color-warning-plain: white;
+  --btn-hover-bg-color-warning-plain: #e6a23c;
+  --btn-hover-border-color-warning-plain: #e6a23c;
+  --btn-text-color-warning-disabled: white;
+  --btn-bg-color-warning-disabled: #f3d19e;
+  --btn-border-color-warning-disabled: #f3d19e;
+
+
+  --btn-text-color-danger: white;
+  --btn-bg-color-danger: #f56c6c;
+  --btn-border-color-danger: #f56c6c;
+  --btn-outline-color-danger: #fab6b6;
+  --btn-hover-text-color-danger: white;
+  --btn-hover-link-text-color-danger: #fab6b6;
+  --btn-hover-bg-color-danger: #f89898;
+  --btn-hover-border-color-danger: #f89898;
+  --btn-active-color-danger: white;
+  --btn-active-bg-color-danger: #c45656;
+  --btn-active-border-color-danger: #c45656;
+  --btn-text-color-danger-plain: #f56c6c;
+  --btn-bg-color-danger-plain: #fef0f0;
+  --btn-border-color-danger-plain: #fab6b6;
+  --btn-hover-text-color-danger-plain: white;
+  --btn-hover-bg-color-danger-plain: #f56c6c;
+  --btn-hover-border-color-danger-plain: #f56c6c;
+  --btn-text-color-danger-disabled: white;
+  --btn-bg-color-danger-disabled: #fab6b6;
+  --btn-border-color-danger-disabled:#fab6b6;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
