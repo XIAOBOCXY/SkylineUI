@@ -206,7 +206,6 @@
 | readonly                    | 原生 ` readonly` 属性，是否只读                              | `boolean`           | false  |
 | resize                      | 控制是否能被用户缩放                                         | `enum`              | —      |
 | autofocus                   | 原生属性，自动获取焦点                                       | `boolean`           | false  |
-| form                        | 原生属性                                                     | `string`            | —      |
 | label                       | 等价于原生 input `aria-label` 属性                           | `string`            | —      |
 | tabindex                    | 输入框的 tabindex                                            | `string` / `number` | —      |
 | input-style                 | input 元素或 textarea 元素的 style                           | `string` / `object` | {}     |

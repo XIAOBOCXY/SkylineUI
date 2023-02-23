@@ -14,11 +14,24 @@ export default {
       type: String,
       require: true,
     },
+    urlSet: String,
     size: {//图片大小
       type: Number,
       default:100
     },
+    alt: String,
   },
+  data() {
+    return {
+      isImageExist: true,
+    }
+  },
+  methods: {
+    // 图片加载失败处理方法
+    handleError() {
+      this.isImageExist = false;
+    },
+  }
 };
 </script>
 

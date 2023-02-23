@@ -152,9 +152,9 @@ const props = defineProps({
     type: [String, Object],
     default: {}
   },
-  formatter: {
-    type: String
-  },
+  // formatter: {
+  //   type: String
+  // },
   // showPassword:{
   //     type:Boolean,
   //     default:''

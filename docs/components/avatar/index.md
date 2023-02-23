@@ -4,7 +4,7 @@ Avatar 组件可以用来代表人物或对象， 支持使用图片作为 Avata
 
 ## 基础⽤法
 
-使用 size 属性来设置 Avatar 的形状和大小。size 属性默认值为 100px。
+使用 size 属性来设置 Avatar 的形状和大小。
 
 :::demo
 
@@ -12,7 +12,7 @@ Avatar 组件可以用来代表人物或对象， 支持使用图片作为 Avata
 <template>
   <div>
     <sky-avatar :url="avatarImgOne" :size="100" />
-    <sky-avatar :url="avatarImgTwo" :size="200" />
+    <sky-avatar :url="avatarImgTwo" :size="200"/>
   </div>
 </template>
 <script>
@@ -34,3 +34,10 @@ export default {
   float:left;
 }
 </component>
+:::
+## Avatar Attributes
+
+| 参数  | 说明              | 类型     | 可选值        | 默认值 |
+| :------ | :----------------- | :------- | :-------------- | :----- |
+| url  | Avatar 图片的源地址| `string` | --     | --      |
+| size    | Avatar 大小       | `number` | --  | 100     |

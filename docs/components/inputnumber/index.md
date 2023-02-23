@@ -44,7 +44,7 @@
 ## 步进
 允许定义递增递减的步进控制
 
-设置 step 属性可以控制步长。
+设置 `step` 属性可以控制步长。
 :::demo 
 
 ```vue
@@ -63,9 +63,9 @@
 :::
 
 ## 严格步进
-step-strictly属性接受一个Boolean。 
+`step-strictly`属性接受一个`Boolean`。 
 
-如果这个属性被设置为 true，则只能输入步进的倍数。
+如果这个属性被设置为 `true`，则只能输入步进的倍数。
 :::demo 
 
 ```vue
@@ -84,7 +84,7 @@ step-strictly属性接受一个Boolean。
 :::
 
 ## 精度
-设置 precision 属性可以控制数值精度，接收一个 Number。
+设置 `precision` 属性可以控制数值精度，接收一个 `Number`。
 
 :::demo 
 
@@ -104,7 +104,7 @@ step-strictly属性接受一个Boolean。
 :::
 
 ## 不同的输入框尺寸
-使用 size 属性额外配置尺寸，可选的尺寸大小为：large 或 small
+使用 `size` 属性额外配置尺寸，可选的尺寸大小为：`large` 或 `small`
 :::demo 
 
 ```vue
