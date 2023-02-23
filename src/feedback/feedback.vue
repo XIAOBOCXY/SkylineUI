@@ -1,13 +1,13 @@
 <template>
-    <!-- 进度条容器  skyFeedback -->
-    <div class="skyFeedback">
-      <sky-span class="skyFeedback-fill" ref="fill" :style="[{'background-color':color}]"></sky-span>
+    <!-- 进度条容器  skyProgress -->
+    <div class="skyProgress">
+      <sky-span class="skyProgress-fill"  :style="[{'background-color':color}]"></sky-span>
     </div>
   </template>   
 
   <script lang="ts">
   export default {
-    name: "skyFeedback",
+    name: "sky-progress",
     props: {
       color: {
         type: String,
@@ -15,7 +15,7 @@
       },
       value: {
         type: [String, Number],
-        default: 0
+        default: false
       }
     },
     mounted() {
@@ -31,16 +31,16 @@
 
 <!-- 样式 -->
 <style scoped lang="scss">
-    .skyFeedback {
+    .skyProgress {
       width: 280px;
       height: 40px;
       border-radius: 40px;
       overflow: hidden;
       position: relative;
-      background-color: rgb(232, 232, 232);
+      background-color: red;
       box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.8), 
                   6px 2px 12px -2px rgba(0, 0, 0, 0.6);
-  .skyFeedback-fill {
+  .skyProgress-fill {
     display: block;
     width: 0;
     max-width: 100%;
@@ -48,7 +48,7 @@
     transition: 2s width ease-in-out;
   }
 }
-.skyFeedback-fill {
+.skyProgress-fill {
 &:after {
       content: "";
       display: block;
